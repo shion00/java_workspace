@@ -12,7 +12,7 @@ class Dog{
 	int age=9;//나이 - 상태(변수)
 	
 	//짖는다 - 동작(함수)
-	//반환형이 없는 함수는 void를 명시한다.
+	//반환값이 없는 함수는 void를 명시한다.
 	public void bark(){
 		System.out.println("윅윅");
 	}

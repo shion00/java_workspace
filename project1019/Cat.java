@@ -12,15 +12,15 @@ UseCat 클래스 Cat의 정보를 화면에 출력해본다.
 
 class Cat{
 
-	char name='묘';
+	String name="묘";
 	int age=3;
-	String marry="미혼";
+	boolean isMarried=false;
 
-	public void run(){
-		System.out.println("걷는중");
+	public void walk(){//걷는 동작
+		System.out.println("고양이가 걸어요");
 	}
 
-	public void cry(){
+	public void cry(){//우는 동작
 		System.out.println("미양~");
 	}
 
