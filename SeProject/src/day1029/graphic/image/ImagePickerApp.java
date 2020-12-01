@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import day1028.graphic.color.ThumbPanel;
 
 public class ImagePickerApp extends JFrame{
-	String dir="C:/Users/MASTER/eclipse-workspace/SeProject/res/travel2/";
+	String dir="D:/workspace/java_workspace/SeProject/res/travel2/";
 	String[] path= {
 			"aa.jpg","ab.jpg","ax.jpg","bm.jpg","et.jpg","kg.jpg","mx.jpg","pk.jpg","ub.jpg","ya.jpg"
 	};

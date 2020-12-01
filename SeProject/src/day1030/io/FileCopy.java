@@ -9,8 +9,8 @@ public class FileCopy {
 	String ori =  "D:/workspace/java_workspace/SeProject/res/data/memo.txt";// 원본의 위치
 	String dest = "D:/workspace/java_workspace/SeProject/res/data/memo_copy.txt";// 복사될 경로의 위치
 	
-	//String ori = "C:/Users/MASTER/eclipse-workspace/SeProject/res/travel2/aa.jpg";
-	//String dest =  "C:/Users/MASTER/eclipse-workspace/SeProject/res/data/photo.jpg";
+	//String ori = "D:/workspace/java_workspace/SeProject/res/travel2/aa.jpg";
+	//String dest =  "D:/workspace/java_workspace/SeProject/res/travel2/data/photo.jpg";
 	
 	
 	FileInputStream fis;// 파일을 대상으로 한 입력스트림

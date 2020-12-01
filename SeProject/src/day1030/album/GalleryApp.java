@@ -26,7 +26,7 @@ public class GalleryApp extends JFrame implements ActionListener{
 	JButton bt_prev, bt_next;
 	
 	ArrayList<Thumb> list=new ArrayList<Thumb>();//썸네일 배열 선언,컬랙션 프레임웍 중 list 계열 중 arraylist 사용해보자
-	String dir="C:/Users/MASTER/eclipse-workspace/SeProject/res/travel2/";
+	String dir="D:/workspace/java_workspace/SeProject/res/travel2/";
 	String[] src= {"aa.jpg","ab.jpg","ax.jpg","bm.jpg","et.jpg","kg.jpg","mx.jpg","pk.jpg","ub.jpg","ya.jpg"};
 	
 	int n=0;//배열의 index

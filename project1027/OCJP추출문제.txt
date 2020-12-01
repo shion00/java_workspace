@@ -154,7 +154,8 @@ A. Foo { public int bar() { return 1; } }
 B. new Foo { public int bar() { return 1; } }
 C. new Foo() { public int bar(){return 1; } }
 D. new class Foo { public int bar() { return 1; } }
-
+//내부익명클래스
+c
 
 Question 18  :
 Given:
@@ -208,7 +209,8 @@ C. An exception is thrown at runtime.
 D. Compilation fails because of an error in line 1.
 E. Compilation fails because of an error in line 4.
 F. Compilation fails because of an error in line 5.
-
+: toStrigng
+A
 
 Question 21 :
 Given:
@@ -280,7 +282,7 @@ public void load() { /*do something*/ }
 }
 C. public class Employee extends Info implements Data {
 public void load() { /*do something */ }
-public void Info.load() { /*do something*/ }
+public void Info.load() { /*do something*/ }//x
 }
 D. public class Employee implements Info extends Data {
 public void Data.load() { /*d something */ }
@@ -293,7 +295,8 @@ public void Info.load(){ /*do something*/ }
 F. public class Employee extends Info implements Data{
 public void Data.load() { /*do something*/ }
 public void Info.load() { /*do something*/ }
-
+: 
+a
 
 Question 24 :
 Given:
@@ -329,9 +332,10 @@ F. public abstract class Circle implements Shape {
 private int radius;
 public void draw() { / code here */ }
 }
+:
+b,e
 
-
-Question 29 :
+Question 29 : 틀림
 Given:
 55. int []x= {1,2,3,4,5};
 56. int y[] = x;
@@ -341,7 +345,8 @@ A. Line 57 will print the value 2.
 B. Line 57 will print the value 3.
 C. Compilation will fail because of an error in line 55.
 D. Compilation will fail because of an error in line 56.
-
+: 배열은 객체취급, 레퍼런스변수로 움직인다.!!!
+B
 
 Question 30 :
 Given:
@@ -354,14 +359,17 @@ A. Line 35 will not compile.
 B. Line 36 will not compile.
 C. Line 37 will not compile.
 D. Line 38 will not compile.
+:
+a,d
 
-
-Question 35 :
+Question 35 : 틀림
 Given:
 11. public static void main(String[] args) {
 12. Object obj =new int[] { 1,2,3 };
 13. int[] someArray = (int[])obj;
-14. for (int i: someArray) System.out.print(i +“ “)
+14. for (int i: someArray) System.out.print(i +“ “)//improved for statement(개선된 for문)
+						  //:의 오른쪽에 있는 배열크기만큼 반복해서 :왼쪽에 있는 변수에 담는다.
+						 //단점 기본 for문의 비해 속도저하발생
 15. }
 What is the result?
 A. 1 2 3
@@ -369,7 +377,8 @@ B. Compilation fails because of an error in line 12.
 C. Compilation fails because of an error in line 13.
 D. Compilation fails because of an error in line 14.
 E. A ClassCastException is thrown at runtime.
-
+: 12, 14
+:A
 
 Question 36 :
 Given:
@@ -381,8 +390,9 @@ Which two are true? (Choose two.)
 A. Foo.beta() is a valid invocation of beta().
 B. Foo.alpha() is a valid invocation of alpha().
 C. Method beta() can directly call method alpha().
-D. Method alpha() can directly call method beta().
-
+D. Method alpha() can directly call method beta().//레퍼런스 변수가 있어야 한다.
+:b,c
+: alpha() 또는 Foo.alpha() 로 호출할 수 있다.
 
 Question 42 :
 Given:
@@ -392,13 +402,15 @@ Given:
 13. class Two extends One {
 14. //insert method here
 15. }
-Which three methods, inserted individually at line 14, will correctly complete class Two? (Choose three.)
+Which three methods, inserted individually at line 14, 
+will correctly complete class Two? (Choose three.)
 A. int foo() { /* more code here */ }
 B. void foo() { /* more code here */ }
 C. public void foo() { /* more code here */ }
 D. private void foo() { /* more code here */ }
 E. protected void foo() { /* more code here */ }
-
+:public < protected < default < private
+b,c,e
 
 Question 45 :
 Given:
@@ -417,8 +429,7 @@ A. An exception is thrown at runtime.
 B. Compilation fails because of an error in line 7.
 C. Compilation fails because of an error in line 4.
 D. Compilation succeeds and no runtime errors with class A occur.
-
-
+:c
 
 Question 48 :
 Given:
@@ -440,9 +451,9 @@ B. 3
 C. 123
 D. 321
 E. The code rims with no output.
+:c
 
-
-Question 50 :
+Question 50 :틀림
 Given:
 1. public class Plant {
 2. private String name;
@@ -458,7 +469,8 @@ A. The code will compile without changes.
 B. The code will compile if public Tree() { Plant(); } is added to the Tree class.
 C. The code will compile if public Plant() { Tree(); } is added to the Plant class.
 D. The code will compile if public Plant() { this(”fern”); } is added to the Plant class.
-E. The code will compile if public Plant() { Plant(”fern”); } is added to the Plant class.
+E. The code will compile if public Plant() { Plant(”fern”); } is added to the Plant class.//자신을 호출할때는 this를 쓴다.
+:C, 자신을 호출할때는 this를 쓴다.
 
 
 
