@@ -1,0 +1,31 @@
+package day1029.collection;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import javax.swing.JButton;
+
+
+public class CollectionApp {
+	
+	public CollectionApp() {
+		
+		ArrayList<String> arrayList=new ArrayList<String>();
+		arrayList.add("강아지");
+		arrayList.add("고양이");
+		arrayList.add("호랑이");
+		arrayList.add("호랑이");
+		
+		System.out.println("arrayList의 크기는 "+arrayList.size());
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

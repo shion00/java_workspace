@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="NodeList/OracleTable">
+		<column name="Name" visible="true" order="0" width="88"/>
+		<column name="Stat Row Count" visible="true" order="1" width="121"/>
+		<column name="Tablespace" visible="true" order="2" width="91"/>
+		<column name="Comment" visible="true" order="3" width="81"/>
+	</item>
+	<item id="NodeList/OracleTableColumn">
+		<column name="컬럼명" visible="true" order="0" width="85"/>
+		<column name="#" visible="true" order="1" width="33"/>
+		<column name="Type" visible="true" order="2" width="117"/>
+		<column name="Type Mod" visible="true" order="3" width="83"/>
+		<column name="Not Null" visible="true" order="4" width="72"/>
+		<column name="디폴트" visible="true" order="5" width="59"/>
+		<column name="Comment" visible="true" order="6" width="81"/>
+	</item>
+</items>
